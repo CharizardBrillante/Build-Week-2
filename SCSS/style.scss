@@ -1,0 +1,244 @@
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+body {
+    background-image: url(/PHOTOS/shutterstock_1937118886.jpg);
+    background-size: cover;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    background-image: url(/PHOTOS/shutterstock_1937118886.jpg);
+    box-shadow: 10px 10px 20px aqua;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+#mainContainer{
+    padding: 2em;
+    color: white!important;
+
+    #searchContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        background-color: rgba(0, 0, 0, 0.428);
+        border-radius: 50px;
+
+        #searchBar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            input {
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.315);
+                color: aqua;
+                box-shadow: 0px 0px 20px indigo;
+            }
+            button {
+                background-color: black;
+                color: aqua;
+                border-radius: 10px;
+            }
+        }
+        #formPage {
+            display: flex;
+            margin-top: 1em;
+            
+            input {
+                align-self: center;
+                margin-left: .5em;
+            }
+            label {
+                margin-top: 5px;
+                align-self: center;
+            }
+            #submit {
+                margin-left: .5em;
+                border-radius: 50%;
+                border: 3px outset gainsboro;
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+#p--display {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.458);
+    
+    .p--container {
+        border: 5px solid aqua;
+        outline: 3px groove azure;
+        border-radius: 20px;
+        padding-bottom: 1em;
+        box-shadow: 1px 1px 50px aqua;
+        table {
+            background-image: linear-gradient(rgb(87, 87, 185), rgb(0, 0, 0));
+        }
+        
+        tbody {color: rgba(255, 255, 255, 0.997)!important;}
+    
+        thead {
+            color: white!important;
+            text-align: center;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.154);
+        }
+        .tdActions {
+            float: right;
+        }
+        td {
+            border: none;
+            text-align: center;
+
+            .buttonDetails {
+                box-shadow: 0px 0px 20px green;
+                background-color: rgba(0, 255, 0, 0.517);
+                color: rgb(76, 254, 76)!important;
+            }
+            .buttonDelete {
+                box-shadow: 0px 0px 20px red;
+                background-color: rgba(192, 0, 0, 0.591);
+                color: rgb(255, 66, 66)!important;
+            }
+            .buttonModify {
+                box-shadow: 0px 0px 20px blue;
+                background-color: rgba(0, 0, 255, 0.62);
+                color: rgb(0, 174, 255)!important;
+            }
+        }
+        tr {
+            box-shadow: 1px 1px 10px aqua;
+        }
+
+        button {color: rgba(0, 0, 0, 0.587)!important;}
+
+        #buttonsPage {
+            display: flex;
+            justify-content: space-evenly;
+
+            button {
+                margin-left: .1em;
+                box-shadow: 0px 0px 20px yellow;
+            }
+            #first {
+                ion-icon {
+                    color: white;
+                }
+            }
+            #last {
+                ion-icon {
+                    color: white;
+                }
+            }
+        }
+    }
+    .container2 {
+        
+        .details {
+            position: sticky;
+            text-align: center;
+            font-size: 2em;
+            width: 20vw;
+            transition: all 1s ease;
+            transform-style: preserve-3d;
+            cursor: pointer;
+
+            .detailsFront {
+                padding: 2em 1em;
+                background-image: linear-gradient(rgb(87, 87, 185), rgb(0, 0, 0));
+                width: 100%;
+                text-align: center;
+                box-shadow: 1px 1px 50px aqua;
+                border: 2px outset aqua;
+                font-size: 1rem;
+                transform: translateZ(1px);
+                position: absolute;
+                border-radius: 10px;
+
+                .c-photo {
+                    height: 40%;
+                    width: 40%;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 30px aqua;
+                    border: 2px solid aqua;
+                    outline: 5px solid rgb(4, 102, 102);
+                    margin-bottom: 1em;
+                }
+                .pRotate {
+                    font-size: .8rem;
+                    margin-top: 5em;
+                }
+            }
+            .detailsBack {
+                padding-top: 1em;
+                width: 100%;
+                position: absolute;
+            
+
+                iframe {
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        
+    }
+
+    #divGrande {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 100;
+    }
+}
+
+.p--hidden {
+    display: none;
+}
+
+.form {
+    max-width: 34vw;
+    max-height: 66vh;
+    margin: 2em auto;
+    label {
+        color: white;
+        width: 100%;
+        text-align: center;        
+    }
+    input{
+        margin-bottom: 2em;
+    }
+    button {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+#addUser {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 30%;
+}
+.rotation {
+    visibility: hidden;
+}
+
